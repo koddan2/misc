@@ -12,4 +12,4 @@ if (-not [Directory]::Exists($_spaceVimDirectory)) {
     -v ${_spaceVimDirectory}:/home/spacevim/.SpaceVim.d `
     -v ${pwd}:/home/spacevim/workdir `
     -w /home/spacevim/workdir `
-    docker.io/spacevim/spacevim nvim
+    docker.io/spacevim/spacevim nvim @args
